@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+    <title>Phone Dialer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="keypad__container">
+        <div class="screen">
+          <input
+            type="text"
+            id="display"
+            class="display"
+            disabled
+            value=""
+          />
+          <span class="clr-btn">
+            <img src="img/backspace.svg" alt="" class="clr">
+          </span>
+        </div>
+        <div class="buttons__container">
+          <button class="btn" data-num="1">1</button>
+          <button class="btn" data-num="2">
+            2 <span class="alph">ABC</span>
+          </button>
+          <button class="btn" data-num="3">
+            3 <span class="alph">DEF</span>
+          </button>
+          <button class="btn" data-num="4">
+            4 <span class="alph">GHI</span>
+          </button>
+          <button class="btn" data-num="5">
+            5 <span class="alph">JKL</span>
+          </button>
+          <button class="btn" data-num="6">
+            6 <span class="alph">MNO</span>
+          </button>
+          <button class="btn" data-num="7">
+            7 <span class="alph">PQRS</span>
+          </button>
+          <button class="btn" data-num="8">
+            8 <span class="alph">TUV</span>
+          </button>
+          <button class="btn" data-num="9">
+            9 <span class="alph">WXYZ</span>
+          </button>
+          <button class="btn" data-num="*">* <span></span></button>
+          <button class="btn" data-num="0">
+            0
+            <span class="alph">+</span>
+          </button>
+          <button class="btn">#</button>
+        </div>
+        <div class="dialers">
+          <button class="dialer">
+            <i class="fa fa-phone fa-3" aria-hidden="true"></i>
+            <span class="sim">1</span>
+          </button>
+          <button class="dialer">
+            <i class="fa fa-phone fa-3" aria-hidden="true"></i>
+            <span class="sim">2</span>
+          </button>
+        </div>
+        <div class="nav">
+          <a href="#" class="nav__link keypad active">Keypad</a>
+          <a href="#" class="nav__link recent">Recents</a>
+          <a href="#" class="nav__link contacts">Contacts</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
